@@ -177,7 +177,7 @@
 }
  @media (max-width: 768px) {
      #header {
-         height: 80px;
+         height: 89px;
     }
      #header #logo h1 {
          font-size: 26px;
@@ -257,7 +257,7 @@
      outline: none;
 }
  .nav-menu a:hover, .nav-menu li:hover > a, .nav-menu .menu-active > a {
-     color: #03C4EB;
+     color: #262929;
 }
  .nav-menu ul {
      margin: 4px 0 0 15px;
@@ -430,9 +430,9 @@
 }
 /* Services Section --------------------------------*/
  #services {
-     background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../img/services-bg.jpg") fixed center center;
+     background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../img/airplane.jpg") fixed center center;
      background-size: cover;
-     padding: 80px 0 60px 0;
+     padding: 38px 0 41em 0;
 }
  #services .service-item {
      margin-bottom: 7em;
@@ -440,7 +440,6 @@
  #services .service-icon {
      float: left;
      padding: 16px;
-     border-radius: 50%;
      transition: 0.5s;
 }
  #services .service-icon i {
