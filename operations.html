@@ -43,9 +43,7 @@
 
     <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
     <link href="favicon.ico" rel="shortcut icon">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
 
@@ -73,13 +71,9 @@
 <link href="css/app.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
  
- 
 </head>
 
 <body>
-
-
-
     <button type="button" id="mobile-nav-toggle"><i class="fa fa-bars"></i></button>
     <!--  <div id="preloader"></div>-->
 
@@ -91,7 +85,7 @@
             <div class="container">
 
                 <div id="logo" class="pull-left">
-                    <a href="#hero" style="color:white"><img src="img/vancrologo.png" alt="" title="" style="max-height: 4em;">
+                    <a href="#hero" style="color:white"><img src="img/vancrologo.png" alt="" title="" style="max-height: 50px;">
                     </a>
                     <a href="" style="pointer-events: none; cursor: default;color: white;
         padding-left: 1em;"></a>
@@ -99,20 +93,44 @@
                     <!--<h1><a href="#hero">Header 1</a></h1>-->
                 </div>
 
-
-
                 <nav id="nav-menu-container">
                     <ul class="nav-menu sf-js-enabled sf-arrows" style="touch-action: pan-y;">
-                        
-           
- 
+                        <!--<li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#team">Team</a></li>-->
+
                         <li><a href="#about">About Us</a></li>
-			<li><a href="#asl">ASL</a></li>
- 	<li><a href="#portfolio">Partners</a></li>
-			<li><a href="#services">UAV Support</a></li>
+
+                        <!--  <a href="about-us.html" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">About Us </a>
+         <ul class="dropdown-menu">
+            <li><a href="/company-overview">Company Overview</a></li>
+            <li><a href="core-principles.html">Core Principles</a></li>
+
+          </ul>
+        </li>-->
+                        <li class="dropdown">
+                            <a href="#services" class="dropdown-toggle sf-with-ul" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services </a>
+                            <ul class="dropdown-menu" style="display: none;">
+                                <li><a href="support.html">eDiscovery and Litigation Support</a></li>
+                                <li><a href="consulting.html">IT Consulting</a></li>
+                                <li><a href="services.html">Web Services</a></li>
+
+                            </ul>
+                        </li>
                         <li><a href="opportunities.html">Careers &amp; Benefits</a></li>
+
+                        <!--  <li class="dropdown">
+      <a href="opportunities.html" class="dropdown-toggle" data-toggle="dropdown"
+      role="button" aria-haspopup="true" aria-expanded="false">careers & Benefits </a>
+      <ul class="dropdown-menu">
+        <li><a href="opportunities.html">Benefits</a></li>
+        <li><a href="opportunities.html">Opportunities</a></li>
+      </ul>
+    </li>-->
+
                         <li><a href="#contact">Contact Us</a></li>
-                 	<li><a target="_blank" href="vancro-capability-statement.pdf">Capability Statement</a></li>
+                 <li><a target="_blank" href="vancro-capability-statement.pdf">Capability Statement</a></li>
                     </ul>
                 </nav>
                 <!-- #nav-menu-container -->
@@ -166,7 +184,7 @@ Vancro's experience lends itself well to threat analysis of adversaries, whether
     <!--==========================
   Services Section
   ============================-->
-    <section id="asl" style="
+    <section id="services" style="
     padding: 51px 0 0em 0;
 ">
         <div class="container wow fadeInUp">
@@ -254,17 +272,7 @@ If there is something we could be doing differently or better, we want to know.<
         
         <!-- item -->
         <div class="col-xs-6 col-sm-3">
-            <div class="thumbnail" style="
-    display: block;
-    width: 100%;
-    /* height: 252px; */
-    /* padding: 15px 27px; */
-    line-height: 1.1em;
-    color: #fcb248;
-    margin-bottom: 10px;
-    font-size: smaller;
-    border: 2px solid #00313d;
-">
+            <div class="thumbnail">
                 <div class="img-wrapper" style="padding-bottom: 105.2%;">
                     <img src="img/clients/dia.jpg" alt="400">
                 </div>
@@ -274,17 +282,7 @@ If there is something we could be doing differently or better, we want to know.<
             
         <!-- item -->
         <div class="col-xs-6 col-sm-3">
-            <div class="thumbnail" style="
-    display: block;
-    width: 100%;
-    /* height: 252px; */
-    /* padding: 15px 27px; */
-    line-height: 1.1em;
-    color: #fcb248;
-    margin-bottom: 10px;
-    font-size: smaller;
-    border: 2px solid #00313d;
-">
+            <div class="thumbnail">
                 <div class="img-wrapper" style="padding-bottom: 105.2%;">
                     <img src="img/clients/special.png" alt="800" style="
     height: 93%;
@@ -296,17 +294,7 @@ If there is something we could be doing differently or better, we want to know.<
             
         <!-- item -->
         <div class="col-xs-6 col-sm-3">
-            <div class="thumbnail"style="
-    display: block;
-    width: 100%;
-    /* height: 252px; */
-    /* padding: 15px 27px; */
-    line-height: 1.4em;
-    color: #fcb248;
-    margin-bottom: 10px;
-    font-size: smaller;
-    border: 2px solid #00313d;
-">
+            <div class="thumbnail">
                 <div class="img-wrapper">
                     <img src="img/clients/joint.png" alt="400">
                 </div>
@@ -316,17 +304,7 @@ If there is something we could be doing differently or better, we want to know.<
             
                 <!-- item -->
         <div class="col-xs-6 col-sm-3">
-            <div class="thumbnail" style="
-    display: block;
-    width: 100%;
-    /* height: 252px; */
-    /* padding: 15px 27px; */
-    line-height: 1.1em;
-    color: #fcb248;
-    margin-bottom: 10px;
-    font-size: smaller;
-    border: 2px solid #00313d;
-">
+            <div class="thumbnail">
                 <div class="img-wrapper" style="padding-bottom: 105.2%;">
                     <img src="img/clients/dod.png" alt="400">
                 </div>
@@ -362,18 +340,18 @@ If there is something we could be doing differently or better, we want to know.<
 
           </p><h6 style="font-size: 1.4em" class="section-title">In partnership with Martin UAV, Vancro offers high quality Unmanned Aircraft Systems for a variety of application. Our products include:</h6>
           <div class="col-sm-4">
-<p><strong style="font-weight:10em"><a href="v-bat.html">V-Bat</a></strong> 
+<p><strong style="font-weight:10em">V-Bat</strong> 
 = Long endurance Vertical Take-Off and Landing (VTOL) design ideal for shipboard and confined area operation. Ducted fan design maximizes operational safety. The aircraft is launched and recovered in a 20 x 20 ft area. 
 8-10 hours duration with a 5-10 lbs payload</p>
 </div>
 <div class="col-sm-4">
-<p><strong style="font-weight:10em"><a href="super.html">Super Bat</a></strong> 
+<p><strong style="font-weight:10em">Super Bat</strong> 
 = The Super Bat is a small UAS weighing undre 50 lbs. Mission capabilities found only in larger UAVs. 
 Complete UAV system that can operate autonomously. High quality video imagery. Transported in a small SUV. 
 10-hour maximum duration with telemetry range of 10-30 miles</p>
 </div>
 <div class="col-sm-4">
-<p><strong style="font-weight:10em"><a href="bat-4.html">Bat 4</a></strong> = 
+<p><strong style="font-weight:10em">Bat 4</strong> = 
 The Bat 4 is a complete UAV system with a modular payload bay. 20 lbs payload capacity. 6-12 hour duration. 750 Watt generator. 
 10-30 mile telemetry range </p>
 </div>
@@ -413,7 +391,7 @@ The Bat 4 is a complete UAV system with a modular payload bay. 20 lbs payload ca
       </div>
 
       <div class="row">
-        <div class="col-md-12 service-item" style="margin-bottom: 3em;">
+        <div class="col-md-12 service-item">
           <div class="service-icon">
 <img src="img/v_bat.jpg" class="img-responsive" alt="Responsive Image" 
              width="307" height="240"><!--<i class="fa fa-users"></i>--></div>
@@ -421,7 +399,7 @@ The Bat 4 is a complete UAV system with a modular payload bay. 20 lbs payload ca
 <h4 class="service-title" style="padding-top: 1em;"><a target="_blank" href="v-bat.html"><font style="text-transform: lowercase;"></font>
 	<u>V-Bat</u></a></h4>
 <p class="service-description">
-<p>The <a href="v-bat.html">V-Bat</a> achieves high efficiency by merging sailplane-like wings and a slender fuselage with a mechanically simple ducted fan vertical 
+<p>The V-Bat achieves high efficiency by merging sailplane-like wings and a slender fuselage with a mechanically simple ducted fan vertical 
 lift system that simultaneously serves as the aircraft's tail surfaces. The V-Bat offers the performance of proven fixed-wing design with the flexibility of 
 true vertical take-off and landing capability. The V-Bat is uniquely designed for perch and stare operations,
 <span id="dots">...</span><span id="more">fully capable of flight transition at any point in a given mission.</span></p>
@@ -430,7 +408,7 @@ true vertical take-off and landing capability. The V-Bat is uniquely designed fo
  
 
         </div>
-        <div class="col-md-12 service-item" style="margin-bottom: 3em;">
+        <div class="col-md-12 service-item">
           <div class="service-icon" style="float:right">
             <img src="img/super_bat.jpg" class="img-responsive" alt="Responsive Image" 
              width="307" height="240">
@@ -438,7 +416,7 @@ true vertical take-off and landing capability. The V-Bat is uniquely designed fo
           <h4 class="service-title" style="margin-left: 2em;"><a target="_blank" href="super.html"><u>Super Bat</u></a></h4>
           <p class="service-description" style="margin-left: 2em;">
 
- The small, light-weight <a href="super.html">Super Bat</a>  system is sized to fit in a small SUV and is easily transportable to any location a 4WD can reach. The Super Bat assembles in minutes without any tools. A crew of 2 can have it flying within 15 minutes. 
+ The small, light-weight Super Bat system is sized to fit in a small SUV and is easily transportable to any location a 4WD can reach. The Super Bat assembles in minutes without any tools. A crew of 2 can have it flying within 15 minutes. 
 The Super Bat's catapult launch capability and skid-landing gear minimize the need for dedicated infrastructure; a small clearing is all the Super Bat needs for launch and recovery. 
  
  
@@ -466,13 +444,13 @@ Damage Assessment.
 <button onclick="mFunction()" id="myBtn2" style="margin-left: 2em;">Read more</button>
 </div>
  
-        <div class="col-md-12 service-item" style="margin-bottom: 3em;">
+        <div class="col-md-12 service-item">
           <div class="service-icon">
 <img src="img/bat_4.jpg" class="img-responsive" alt="Responsive Image" 
              width="307" height="240"><!--<i class="fa fa-desktop"></i>--></div>
           <h4 class="service-title" style="padding-top: 1em;"><a target="_blank" href="bat-4.html"><u>Bat 4</u></a></h4>
           <p class="service-description">
-<p>Capable of flying from 40 to 70 kts, at up to 10,000 ft and between 6-12 hours depending on payload, the <a href="bat-4.html">Bat 4</a> has the speed, the endurance, and the capability to meet your mission's needs. 
+<p>Capable of flying from 40 to 70 kts, at up to 10,000 ft and between 6-12 hours depending on payload, the Bat 4 has the speed, the endurance, and the capability to meet your mission's needs. 
 Configured with Cloud Cap Piccolo II autopilot, TASE 200 gimbal, ground station and all support equipment, the Bat 4 is a ready-to-use UAS solution right out of the box. 
  
 
