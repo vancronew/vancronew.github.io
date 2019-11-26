@@ -1,6 +1,9 @@
 /* Theme Name: Imperial Theme URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-template/ Author: BootstrapMade Author URL: https://bootstrapmade.com */
 /*-------------------------------------------------------------- # General --------------------------------------------------------------*/
- body {
+ #asl {
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../img/airplane.jpg) fixed center center;
+    background-size: cover;
+    padding: 38px 0 41em 0;body {
      background: #fff;
      color: #666666;
      font-family: "Open Sans", sans-serif;
