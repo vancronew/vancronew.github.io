@@ -436,7 +436,7 @@ body {
  #services {
      background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../img/airplane.jpg") fixed center center;
      background-size: cover;
-     padding: 38px 0 41em 0;
+     padding: 38px 0 2em 0;
 }
  #services .service-item {
      margin-bottom: 7em;
