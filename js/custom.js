@@ -113,8 +113,9 @@ jQuery(document).ready(function ($) {
 
 function validateContactForm() {
     let isFormValid = true;
+    let email = $("#mce-EMAIL").val();
     clearContactFormErrors();
-    if ($("#mce-EMAIL").val().length < 1) {
+    if (email.length < 1 || !isValidEmail(email)) {
         isFormValid = false;
         $("#emailError").show();
     } else if ($("#mce-FNAME").val().length < 1) {
@@ -133,6 +134,15 @@ function validateContactForm() {
     return isFormValid;
 }
 
+function isValidEmail(email)
+{
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))
+    {
+        return true;
+    }
+    return false;
+}
+
 function clearContactFormErrors() {
     $("#emailError").hide();
     $("#fNameError").hide();
@@ -142,6 +152,7 @@ function clearContactFormErrors() {
 
 function validateRequestForm() {
     let isFormValid = true;
+    let newemail = $("#mce-EMAIL").val();
     clearRequestFormErrors();
     if ($("#mce-FNAME").val().length < 1) {
         isFormValid = false;
@@ -149,7 +160,7 @@ function validateRequestForm() {
     }else if ($("#mce-MMERGE2").val().length < 1) {
         isFormValid = false;
         $("#contactError").show();
-    } else if ($("#mce-EMAIL").val().length < 1) {
+    } else if (newemail.length < 1 || !isValidEmail(newemail)) {
         isFormValid = false;
         $("#newEmailError").show();
     } else if ($("#mce-PHONE").val().length < 1) {
@@ -169,6 +180,17 @@ function validateRequestForm() {
         clearRequestFormErrors();
     }
     return isFormValid;
+}
+    
+    
+    
+function isValidEmail(newemail)
+{
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(newemail))
+    {
+        return true;
+    }
+    return false;
 }
 
 function clearRequestFormErrors() {
