@@ -139,3 +139,44 @@ function clearContactFormErrors() {
     $("#lNameError").hide();
     $("#MMERGE6Error").hide();
 }
+
+function validateRequestForm() {
+    let isFormValid = true;
+    clearRequestFormErrors();
+    if ($("#mce-FNAME").val().length < 1) {
+        isFormValid = false;
+        $("#companyError").show();
+    }else if ($("#mce-MMERGE2").val().length < 1) {
+        isFormValid = false;
+        $("#contactError").show();
+    } else if ($("#mce-EMAIL").val().length < 1) {
+        isFormValid = false;
+        $("#newEmailError").show();
+    } else if ($("#mce-PHONE").val().length < 1) {
+        isFormValid = false;
+        $("#phoneError").show();
+    }else if ($("#mce-MMERGE3").val().length < 1) {
+        isFormValid = false;
+        $("#timeError").show();
+    }else if ($("#mce-MMERGE8").val().length < 1) {
+        isFormValid = false;
+        $("#locationError").show();
+    }else if ($("#mce-MMERGE6").val().length < 1) {
+        isFormValid = false;
+        $("#natureError").show();
+    }
+    if (isFormValid) {
+        clearRequestFormErrors();
+    }
+    return isFormValid;
+}
+
+function clearRequestFormErrors() {
+    $("#companyError").hide();
+    $("#contactError").hide();
+    $("#newEmailError").hide();
+    $("#phoneError").hide();
+    $("#timeError").hide();
+    $("#locationError").hide();
+    $("#natureError").hide();
+}
