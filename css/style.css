@@ -66,6 +66,20 @@ body {
      background: #03C4EB;
      color: #fff;
 }
+ .customValidationText {
+     color: red; !important;
+     display: none;!important;
+     margin: 0 0 20px;!important;
+     font-weight: 400;!important;
+     font-size: 13px;!important;
+ }
+ .mc-embedded-subscribe_class  {
+     background: #03C4EB; !important
+     border: 0; !important
+     padding: 10px 24px; !important
+     color: #fff; !important
+     transition: 0.4s; !important
+ }
 /*-------------------------------------------------------------- # Welcome --------------------------------------------------------------*/
  #hero {
      display: table;
