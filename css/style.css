@@ -682,17 +682,10 @@ body {
  #contact .form .validation {
      color: red;
      display: none;
-     margin: 0 0 0px;
+     margin: 0 0 20px;
      font-weight: 400;
      font-size: 13px;
 }
- .customValidationText {
-     color: red; !important;
-     display: none;!important;
-     margin: 0 0 20px;!important;
-     font-weight: 400;!important;
-     font-size: 13px;!important;
- }
  #contact .form input, #contact .form textarea {
      border-radius: 0;
      box-shadow: none;
@@ -704,13 +697,6 @@ body {
      color: #fff;
      transition: 0.4s;
 }
- .mc-embedded-subscribe_class  {
-     background: #03C4EB; !important
-     border: 0; !important
-     padding: 10px 24px; !important
-     color: #fff; !important
-     transition: 0.4s; !important
- }
  #contact .form button[type="submit"]:hover {
      background: #25d8fc;
 }
