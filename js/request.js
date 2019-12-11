@@ -1,26 +1,26 @@
 function validateRequestForm() {
     let isFormValid = true;
-    let newemail = $("#mce-EMAIL").val();
+    let newemail = $("#mce-EMAIL_ADDRESS").val();
     clearRequestFormErrors();
-    if ($("#mce-FNAME").val().length < 1) {
+    if ($("#mce-COMPANY_NAME").val().length < 1) {
         isFormValid = false;
         $("#companyError").show();
-    }else if ($("#mce-MMERGE2").val().length < 1) {
+    }else if ($("#mce-CONTACT_NAME").val().length < 1) {
         isFormValid = false;
         $("#contactError").show();
     } else if (newemail.length < 1 || !isValidEmail(newemail)) {
         isFormValid = false;
         $("#newEmailError").show();
-    } else if ($("#mce-PHONE").val().length < 1) {
+    } else if ($("#mce-PHONE_NUMBER").val().length < 1) {
         isFormValid = false;
         $("#phoneError").show();
-    }else if ($("#mce-MMERGE3").val().length < 1) {
+    }else if ($("#mce-TIME_OF_SERVICES_REQUESTED").val().length < 1) {
         isFormValid = false;
         $("#timeError").show();
-    }else if ($("#mce-MMERGE8").val().length < 1) {
+    }else if ($("#mce-LOCATION_OF_SERVICES_REQUESTED").val().length < 1) {
         isFormValid = false;
         $("#locationError").show();
-    }else if ($("#mce-MMERGE6").val().length < 1) {
+    }else if ($("#mce-NATURE_OF_REQUEST").val().length < 1) {
         isFormValid = false;
         $("#natureError").show();
     }
