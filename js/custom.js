@@ -113,18 +113,18 @@ jQuery(document).ready(function ($) {
 
 function validateContactForm() {
     let isFormValid = true;
-    let email = $("#mce-EMAIL").val();
+    let email = $("#mce-Email_Address").val();
     clearContactFormErrors();
     if (email.length < 1 || !isValidEmail(email)) {
         isFormValid = false;
         $("#emailError").show();
-    } else if ($("#mce-FNAME").val().length < 1) {
+    } else if ($("#mce-First_Name").val().length < 1) {
         isFormValid = false;
         $("#fNameError").show();
-    } else if ($("#mce-LNAME").val().length < 1) {
+    } else if ($("#mce-Last_Name").val().length < 1) {
         isFormValid = false;
         $("#lNameError").show();
-    } else if ($("#mce-MMERGE6").val().length < 1) {
+    } else if ($("#mce-Message").val().length < 1) {
         isFormValid = false;
         $("#MMERGE6Error").show();
     }
