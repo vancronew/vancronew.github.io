@@ -628,7 +628,7 @@ body {
  #team .member .pic {
      margin-bottom: 15px;
      overflow: hidden;
-     height: 215px;
+    /* height: 215px;*/
 }
  #team .member .pic img {
      max-width: 100%;
