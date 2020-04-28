@@ -8,13 +8,13 @@ function validateRequestForm() {
     }else if ($("#mce-Contact_Name").val().length < 1) {
         isFormValid = false;
         $("#contactError").show();
-    } else if (newemail.length < 1 || !isValidEmail(newemail)) {
-        isFormValid = false;
-        $("#newEmailError").show();
     } else if ($("#mce-Phone_Number").val().length < 1) {
         isFormValid = false;
         $("#phoneError").show();
-    }else if ($("#mce-Time_Of_Services_Requested").val().length < 1) {
+    } else if (newemail.length < 1 || !isValidEmail(newemail)) {
+        isFormValid = false;
+        $("#newEmailError").show();
+    } else if ($("#mce-Time_Of_Services_Requested").val().length < 1) {
         isFormValid = false;
         $("#timeError").show();
     }else if ($("#mce-Location_Of_Services_Requested").val().length < 1) {
@@ -44,8 +44,8 @@ function isValidEmail(newemail)
 function clearRequestFormErrors() {
     $("#companyError").hide();
     $("#contactError").hide();
-    $("#newEmailError").hide();
     $("#phoneError").hide();
+    $("#newEmailError").hide();
     $("#timeError").hide();
     $("#locationError").hide();
     $("#natureError").hide();
