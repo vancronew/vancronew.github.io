@@ -20,6 +20,9 @@ function validateRequestForm() {
     }else if ($("#mce-Location_Of_Services_Requested").val().length < 1) {
         isFormValid = false;
         $("#locationError").show();
+    } else if ($("#mce-Preferred_Interpreter").val().length < 1) {
+        isFormValid = false;
+        $("#interpreterError").show();
     }else if ($("#mce-Nature_Of_Request").val().length < 1) {
         isFormValid = false;
         $("#natureError").show();
@@ -48,5 +51,6 @@ function clearRequestFormErrors() {
     $("#newEmailError").hide();
     $("#timeError").hide();
     $("#locationError").hide();
+    $("#interpreterError").hide();
     $("#natureError").hide();
 }
