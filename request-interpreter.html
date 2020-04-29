@@ -208,9 +208,12 @@ method="post " id="mc-embedded-subscribe-form " name="mc-embedded-subscribe-form
                                 <div class="mc-field-group size1of2 ">
                                     <label for="mce-Date_of_Services-month ">Date of assignment </label>
                                     <div class="datefield ">
-                                        <span class="subfield monthfield "><input class="birthday " type="text " pattern="[0-9]* " value=" " placeholder="MM " size="2 " maxlength="2 " name="Date_of_Services[month] " id="mce-Date_of_Services-month " style=" width: 21%; "></span> /
-                                        <span class="subfield dayfield "><input class="birthday " type="text " pattern="[0-9]* " value=" " placeholder="DD " size="2 " maxlength="2 " name="Date_of_Services[day] " id="mce-Date_of_Services-day " style=" width: 21%; "></span>
-                                        <span class="small-meta nowrap ">( mm / dd )</span>
+                                        <span class="subfield monthfield "><input class="birthday " type="text " pattern="[0-9]* " value=" " placeholder="MM " size="3 " maxlength="3 " name="Date_of_Services[month] " id="mce-Date_of_Services-month " style=" width: 6%; "></span> /
+                                        <span class="subfield dayfield "><input class="birthday " type="text " pattern="[0-9]* " value=" " placeholder="DD " size="3 " maxlength="3 " name="Date_of_Services[day] " id="mce-Date_of_Services-day " style=" width: 6%; "></span> /
+                                        
+					    
+					     <span class="subfield yearfield "><input class="birthday " type="text " pattern="[0-9]* " value=" " placeholder="YY " size="5 " maxlength="5 " name="Date_of_Services[year] " id="mce-Date_of_Services-year " style=" width: 6%; "></span>
+                                        <span class="small-meta nowrap ">( mm / dd / yy )</span>
                                     </div>
                                 </div>
                                 
@@ -221,17 +224,29 @@ method="post " id="mc-embedded-subscribe-form " name="mc-embedded-subscribe-form
                                 <div class="mc-field-group size1of2 ">
                                     <label for="mce-Start_date-month ">Start time </label>
                                     <div class="datefield ">
-                                        <span class="subfield monthfield "><input class="birthday " type="text " pattern="[0-9]* " value=" " placeholder="MM " size="2 " maxlength="2 " name="Start_date[month] " id="mce-Start_date-month " style=" width: 21%; "></span> /
-                                        <span class="subfield dayfield "><input class="birthday " type="text " pattern="[0-9]* " value=" " placeholder="DD " size="2 " maxlength="2 " name="Start_date[day] " id="mce-Start_date-day " style=" width: 21%; "></span>
-                                        <span class="small-meta nowrap ">( mm / dd )</span>
+                                        <span class="subfield monthfield "><input class="birthday " type="text " pattern="[0-9]* " value=" " placeholder="00 " size="3 " maxlength="3 " name="Start_date[month] " id="mce-Start_date-month " style=" width: 6%; "></span>:
+                                        <span class="subfield dayfield "><input class="birthday " type="text " pattern="[0-9]* " value=" " placeholder="00 " size="3 " maxlength="3 " name="Start_date[day] " id="mce-Start_date-day " style=" width: 6%; "></span>
+					    <select name="Preferred_Interpreter " class=" " id="mce-Preferred_Interpreter " style="background-color: white; ">
+    <option value="AM">AM</option>
+    <option value="PM">PM</option>
+
+
+    </select>
+                                        <span class="small-meta nowrap ">( ex. 1:00pm )</span>
                                     </div>
                                 </div>
                                 <div class="mc-field-group size1of2 ">
                                     <label for="mce-Deadline_Date-month ">End time </label>
                                     <div class="datefield ">
-                                        <span class="subfield monthfield "><input class="birthday " type="text " pattern="[0-9]* " value=" " placeholder="MM " size="2 " maxlength="2 " name="Deadline_Date[month] " id="mce-Deadline_Date-month " style=" width: 21%; "></span> /
-                                        <span class="subfield dayfield "><input class="birthday " type="text " pattern="[0-9]* " value=" " placeholder="DD " size="2 " maxlength="2 " name="Deadline_Date[day] " id="mce-Deadline_Date-day " style=" width: 21%; "></span>
-                                        <span class="small-meta nowrap ">( mm / dd )</span>
+                                        <span class="subfield monthfield "><input class="birthday " type="text " pattern="[0-9]* " value=" " placeholder="00 " size="3 " maxlength="3 " name="Deadline_Date[month] " id="mce-Deadline_Date-month " style=" width: 6%; "></span> :
+                                        <span class="subfield dayfield "><input class="birthday " type="text " pattern="[0-9]* " value=" " placeholder="00 " size="2 " maxlength="3 " name="Deadline_Date[day] " id="mce-Deadline_Date-day " style=" width: 6%; "></span>
+					       <select name="Preferred_Interpreter " class=" " id="mce-Preferred_Interpreter " style="background-color: white; ">
+    <option value="AM">AM</option>
+    <option value="PM">PM</option>
+
+
+    </select>
+                                        <span class="small-meta nowrap ">( ex. 2:00pm )</span>
                                     </div>
                                 </div>
 
