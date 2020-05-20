@@ -14,6 +14,9 @@ function validateRequestForm() {
     } else if ($("#mce-Company_Name").val().length < 1) {
         isFormValid = false;
         $("#companyError").show();
+    }else if ($("#mce-Time_Zone").val().length < 1) {
+        isFormValid = false;
+        $("#timezoneError").show();
     }
         else if ($("#mce-Time_Of_Services_Requested").val().length < 1) {
         isFormValid = false;
@@ -21,12 +24,19 @@ function validateRequestForm() {
     }else if ($("#mce-Location_Of_Services_Requested").val().length < 1) {
         isFormValid = false;
         $("#locationError").show();
-    } else if ($("#mce-Preferred_Interpreter").val().length < 1) {
+    } else if ($("#mce-Consumer_Name").val().length < 1) {
+        isFormValid = false;
+        $("#consumerError").show();
+    }     
+    else if ($("#mce-Preferred_Interpreter").val().length < 1) {
         isFormValid = false;
         $("#interpreterError").show();
     }else if ($("#mce-Nature_Of_Request").val().length < 1) {
         isFormValid = false;
         $("#natureError").show();
+    }else if ($("#mce-Resource").val().length < 1) {
+        isFormValid = false;
+        $("#resourceError").show();
     }
     if (isFormValid) {
         clearRequestFormErrors();
@@ -50,8 +60,11 @@ function clearRequestFormErrors() {
     $("#contactError").hide();
     $("#phoneError").hide();
     $("#newEmailError").hide();
+    $("#timezoneError").hide();
     $("#timeError").hide();
     $("#locationError").hide();
+    $("#consumerError").hide();
     $("#interpreterError").hide();
     $("#natureError").hide();
+    $("#resourceError").hide();
 }
