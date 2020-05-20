@@ -2,19 +2,20 @@ function validateRequestForm() {
     let isFormValid = true;
     let newemail = $("#mce-Email_Add").val();
     clearRequestFormErrors();
-    if ($("#mce-Company_Name").val().length < 1) {
+    if (newemail.length < 1 || !isValidEmail(newemail)) {
         isFormValid = false;
-        $("#companyError").show();
-    }else if ($("#mce-Contact_Name").val().length < 1) {
+        $("#newEmailError").show();
+    } else if ($("#mce-Contact_Name").val().length < 1) {
         isFormValid = false;
         $("#contactError").show();
     } else if ($("#mce-Phone_Number").val().length < 1) {
         isFormValid = false;
         $("#phoneError").show();
-    } else if (newemail.length < 1 || !isValidEmail(newemail)) {
+    } else if ($("#mce-Company_Name").val().length < 1) {
         isFormValid = false;
-        $("#newEmailError").show();
-    } else if ($("#mce-Time_Of_Services_Requested").val().length < 1) {
+        $("#companyError").show();
+    }
+        else if ($("#mce-Time_Of_Services_Requested").val().length < 1) {
         isFormValid = false;
         $("#timeError").show();
     }else if ($("#mce-Location_Of_Services_Requested").val().length < 1) {
