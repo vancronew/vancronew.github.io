@@ -233,9 +233,9 @@ method="post " id="mc-embedded-subscribe-form " name="mc-embedded-subscribe-form
                                 <div class="mc-field-group size1of2">
                                     <label for="mce-Start_date-month">Start time </label>
                                     <div class="datefield ">
-                                        <span class="subfield monthfield"><input class="birthday " type="text " value=" " placeholder="00 " size="2" maxlength="3" name="Start_date[month]" id="mce-Start_date-month" style=" width: 6%; "></span>:
-                                        <span class="subfield dayfield"><input class="birthday " type="text " value=" " placeholder="00 " size="2" maxlength="3" name="Start_date[day]" id="mce-Start_date-day" style=" width: 6%; "></span>
-					    <select name="Preferred_Interpreter" class=" " id="mce-Preferred_Interpreter" style="background-color: white; ">
+                                        <span class="subfield monthfield"><input class="birthday " type="text " value=" " placeholder="00 " size="2" maxlength="3" name="Start_Hour" id="mce-Start_date-month" style=" width: 6%; "></span>:
+                                        <span class="subfield dayfield"><input class="birthday " type="text " value=" " placeholder="00 " size="2" maxlength="3" name="Start_Minute" id="mce-Start_date-day" style=" width: 6%; "></span>
+					    <select name="AM_PM" class=" " id="mce-Preferred_Interpreter" style="background-color: white; ">
     <option value="AM">AM</option>
     <option value="PM">PM</option>
 
@@ -247,9 +247,9 @@ method="post " id="mc-embedded-subscribe-form " name="mc-embedded-subscribe-form
                                 <div class="mc-field-group size1of2">
                                     <label for="mce-Deadline_Date-month">End time </label>
                                     <div class="datefield ">
-                                        <span class="subfield monthfield"><input class="birthday " type="text " value=" " placeholder="00 " size="2" maxlength="3" name="Deadline_Date[month]" id="mce-Deadline_Date-month" style=" width: 6%; "></span> :
-                                        <span class="subfield dayfield"><input class="birthday " type="text " value=" " placeholder="00 " size="2" maxlength="3" name="Deadline_Date[day]" id="mce-Deadline_Date-day" style=" width: 6%; "></span>
-					       <select name="Preferred_Interpreter" class=" " id="mce-Preferred_Interpreter" style="background-color: white; ">
+                                        <span class="subfield monthfield"><input class="birthday " type="text " value=" " placeholder="00 " size="2" maxlength="3" name="End_Hour[month]" id="mce-Deadline_Date-month" style=" width: 6%; "></span> :
+                                        <span class="subfield dayfield"><input class="birthday " type="text " value=" " placeholder="00 " size="2" maxlength="3" name="End_Minute[day]" id="mce-Deadline_Date-day" style=" width: 6%; "></span>
+					       <select name="AM_PM" class=" " id="mce-Preferred_Interpreter" style="background-color: white; ">
     <option value="AM">AM</option>
     <option value="PM">PM</option>
 
@@ -260,9 +260,16 @@ method="post " id="mc-embedded-subscribe-form " name="mc-embedded-subscribe-form
                                 </div>
 
                             </div>
+		 <div class="mc-field-group">
+                                <label for="mce-Time_Zone">Time Zone: </label>
+                                <input type="text" value=" " name="Time_Zone" class=" " id="mce-Time_Zone" style="width: -webkit-fill-available; ">
+                                <div class="customValidationText" id="timezoneError">Please enter a Time of Service</div>
+                            </div>
+				
+				
                             <div class="mc-field-group">
                                 <label for="mce-Time_Of_Services_Requested">Onsite or remote Interpreting request: </label>
-                                <input type="text" value=" " name="Time_Of_Services_Requested" class=" " id="mce-Time_Of_Services_Requested" style="width: -webkit-fill-available; ">
+                                <input type="text" value=" " name="Type_Of_Service" class=" " id="mce-Time_Of_Services_Requested" style="width: -webkit-fill-available; ">
                                 <div class="customValidationText" id="timeError">Please enter a Time of Service</div>
                             </div>
                             <div class="mc-field-group ">
@@ -271,6 +278,13 @@ method="post " id="mc-embedded-subscribe-form " name="mc-embedded-subscribe-form
                                 <div class="customValidationText" id="locationError">Please enter a Location of Service</div>
 
                             </div>
+				
+				 <div class="mc-field-group">
+                                <label for="mce-Consumer_Name">Consumer Name </label>
+                                <input type="text" value=" " name="Consumer_Name" class=" " id="mce-Consumer_Name" style="width: -webkit-fill-available; ">
+                                <div class="customValidationText" id="consumerError">Please enter a Time of Service</div>
+                            </div>
+				
 
 				<div class="mc-field-group">
                                 <label for="mce-Preferred_Interpreter">Name of preferred interpreter if known <span class="asterisk ">*</span>
@@ -288,6 +302,17 @@ method="post " id="mc-embedded-subscribe-form " name="mc-embedded-subscribe-form
                                 <input type="text" value=" " name="Nature_Of_Request" class="required " id="mce-Nature_Of_Request" style="width: -webkit-fill-available; ">
                                 <div class="customValidationText" id="natureError">Please describe the nature of the request.</div>
                             </div>
+				
+				 <div class="mc-field-group">
+                                <label for="mce-Resource">Consumer Name </label>
+                                <input type="text" value=" " name="Resources_for_Interpreters" class=" " id="mce-Resource" style="width: -webkit-fill-available; ">
+                                <div class="customValidationText" id="resourceError">Please enter a Time of Service</div>
+                            </div>
+				
+				
+				
+				
+				
                        <div id="mce-responses" class="clear">
                                 <div class="response" id="mce-error-response" style="display:none"></div>
                                 <div class="response" id="mce-success-response" style="display:none"></div>
