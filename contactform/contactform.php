@@ -8,7 +8,7 @@
 /***************** Configuration *****************/
 
   // Replace with your real receiving email address
-  $contact_email_to = "mikejferrari12@gmail.com";
+
 
   // Title prefixes
   $subject_title = "Contat Form Message:";
@@ -77,4 +77,3 @@
       echo 'Could not send mail! Please check your PHP mail configuration.';
     }
   }
-?>
